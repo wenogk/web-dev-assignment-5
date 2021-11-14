@@ -1,0 +1,12 @@
+<header>
+        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="images/share.svg" alt="share" class="btn-img">
+            SHARE</button>
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="/" class="nav-link {{#if activeNavigation.home}}active{{/if}}">HOME</a>
+            <a href="/resume" class="nav-link {{#if activeNavigation.resume}}active{{/if}}">RESUME</a>
+            <a href="/portfolio" class="nav-link {{#if activeNavigation.portfolio}}active{{/if}}">PORTFOLIO</a>
+            <a href="/contact" class="nav-link {{#if activeNavigation.contact}}active{{/if}}">CONTACT</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="images/hamburger.svg" alt="hamburger"></button>
+</header>
