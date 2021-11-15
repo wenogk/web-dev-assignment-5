@@ -31,6 +31,23 @@ function setHoverBoxPerspective() {
     });
 }
 
+function shareButtonClicked() {
+    // clipboard code taken from https://stackoverflow.com/questions/64422691/copy-text-of-a-specific-tag-to-clipboard-using-javascript
+    
+    let input = window.location;
+
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(input).then(() => {
+          console.log('Copied to clipboard successfully.');
+        }, (err) => {
+          console.log('Failed to copy the text to clipboard.', err);
+        });
+      } else if (window.clipboardData) {
+        window.clipboardData.setData("Text", input);
+      }
+      alert("Link copied to clipboard!");
+}
+
 
 var classNames = ['in-up', 'in-right', 'in-down', 'in-left', 'out-up', 'out-right', 'out-down', 'out-left']; // Animation classes.
 
