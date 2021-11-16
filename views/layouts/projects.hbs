@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/live-resume.css">
+</head>
+
+<body>
+    {{> header this}}
+
+    <div class="content-wrapper">
+        {{> sidebar this}}
+
+        <main>
+            <section class="portfolio-section">
+                <h2 class="section-title">Frontend Projects</h2>
+                <!-- card-deck, card and card-body classes are used to create a card layout  -->
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="card-img-top" autoplay loop muted >
+                                <source type="video/webm" src="files/igemTeamSite.webm">
+                            </video>
+                            <h5 class="card-title">iGem Team Website</h5>
+                            <p class="card-text">As head of the Computer Science team representing my university in Boston for the iGem competition, I built this website using the same ScrollMagic Javascript library that apple
+                                uses in it's website. The website is coded in <span class="badge badge-dark">HTML</span>,
+                                <span class="badge badge-dark">CSS</span>,and <span
+                                    class="badge badge-dark">Javascript</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="card-img-top" autoplay loop muted >
+                                <source type="video/webm" src="files/audioExperience.webm">
+                            </video>
+                            <h5 class="card-title">A real-time animated audio experience!</h5>
+                            <p class="card-text">In this project I worked with a team to develop an audio experience that is linked in real time to elements of the web page (the animations are not videos but happening real time). Using the power of javascript animations we created an experience in a plane crash, with our own voice recordings and audio editing as well. Please check it out! 
+                                uses <span class="badge badge-dark">HTML</span>, <span
+                                    class="badge badge-dark">CSS</span>, and <span class="badge badge-dark">JS</span>.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="card-img-top" autoplay loop muted >
+                                <source type="video/webm" src="files/terminalWeb.webm">
+                            </video>
+                            <h5 class="card-title">A Terminal on the Web</h5>
+                            <p class="card-text">I developed a functional terminal frontend on the web using <span
+                                    class="badge badge-dark">Jquery</span>, <span class="badge badge-dark">HTML</span>, <span
+                                    class="badge badge-dark">CSS</span>, and <span class="badge badge-dark">JS</span>.</p>
+                        </div>
+                    </div>
+                </div><br/>
+                <h2 class="section-title">Backend Projects</h2>
+                <!-- card-deck, card and card-body classes are used to create a card layout  -->
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="card-img-top" autoplay loop muted >
+                                <source type="video/webm" src="files/igemTeamSite.webm">
+                            </video>
+                            <h5 class="card-title">iGem Team Website</h5>
+                            <p class="card-text">As head of the Computer Science team representing my university in Boston for the iGem competition, I built this website using the same ScrollMagic Javascript library that apple
+                                uses in it's website. The website is coded in <span class="badge badge-dark">HTML</span>,
+                                <span class="badge badge-dark">CSS</span>,and <span
+                                    class="badge badge-dark">Javascript</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="card-img-top" autoplay loop muted >
+                                <source type="video/webm" src="files/audioExperience.webm">
+                            </video>
+                            <h5 class="card-title">An animated audio experience!</h5>
+                            <p class="card-text">In this project I worked with a team to develop an audio experience that is linked in real time to elements of the web page. Using the power of javascript animations we created an experience in a plane crash, with our own voice recordings and audio editing as well. Please check it out! 
+                                uses <span class="badge badge-dark">HTML</span>, <span
+                                    class="badge badge-dark">CSS</span>, and <span class="badge badge-dark">JS</span>
+                                and
+                                <span class="badge badge-dark">React</span> in the frontend. </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="card-img-top" autoplay loop muted >
+                                <source type="video/webm" src="files/terminalWeb.webm">
+                            </video>
+                            <h5 class="card-title">A Terminal on the Web</h5>
+                            <p class="card-text">I developed a functional terminal frontend on the web using <span
+                                    class="badge badge-dark">Jquery</span>, <span class="badge badge-dark">HTML</span>, <span
+                                    class="badge badge-dark">CSS</span>, and <span class="badge badge-dark">JS</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {{> footer this}}
+        </main>
+    </div>
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendors/entry/jq.entry.min.js"></script>
+    <script src="js/live-resume.js"></script>
+</body>
+
+</html>

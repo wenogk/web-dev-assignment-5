@@ -2,22 +2,26 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require("nodemailer");
 var indexConstants = require('../views/constants/index.constants');
-var portfolioConstants = require('../views/constants/portfolio.constants');
-var resumeConstants = require('../views/constants/resume.constants');
+var projectsConstants = require('../views/constants/projects.constants');
+var aboutMeConstants = require('../views/constants/aboutMe.constants');
 var contactConstants = require('../views/constants/contact.constants');
-/* GET home page. */
+
+// Router handler for home page
 router.get('/', function (req, res, next) {
   res.render('index', indexConstants);
 });
 
-router.get('/resume', function (req, res, next) {
-  res.render('resume', resumeConstants);
+// Router handler for projects page
+router.get('/projects', function (req, res, next) {
+  res.render('projects', projectsConstants);
 });
 
-router.get('/portfolio', function (req, res, next) {
-  res.render('portfolio', portfolioConstants);
+// Router handler for about me page
+router.get('/aboutMe', function (req, res, next) {
+  res.render('aboutMe', aboutMeConstants);
 });
 
+// Router handler for contact page, also handling states for view if contact form submission is successful or not
 router.get('/contact', function (req, res, next) {
   let fields = {
     ...contactConstants
@@ -32,6 +36,7 @@ router.get('/contact', function (req, res, next) {
   res.render('contact', fields);
 });
 
+// Router handler for posting (submitting) contact form
 router.post('/contact', function (req, res, next) {
 
   let name = req.body.name;

@@ -1,11 +1,14 @@
 <header>
         <button onclick="shareButtonClicked()" class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="images/share.svg" alt="share" class="btn-img">
             SHARE</button>
+            <!--
+               Requirements are Home page, an About Me page, a Projects page, and a Contact Me
+             -->
         <nav class="collapsible-nav" id="collapsible-nav">
             <a href="/" class="nav-link {{#if activeNavigation.home}}active{{/if}}">HOME</a>
-            <a href="/resume" class="nav-link {{#if activeNavigation.resume}}active{{/if}}">RESUME</a>
-            <a href="/portfolio" class="nav-link {{#if activeNavigation.portfolio}}active{{/if}}">PORTFOLIO</a>
-            <a href="/contact" class="nav-link {{#if activeNavigation.contact}}active{{/if}}">CONTACT</a>
+            <a href="/projects" class="nav-link {{#if activeNavigation.projects}}active{{/if}}">PROJECTS</a>
+            <a href="/aboutMe" class="nav-link {{#if activeNavigation.aboutMe}}active{{/if}}">ABOUT ME</a>
+            <a href="/contact" class="nav-link {{#if activeNavigation.contact}}active{{/if}}">CONTACT ME</a>
         </nav>
         <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
             data-target="collapsible-nav"><img src="images/hamburger.svg" alt="hamburger"></button>
