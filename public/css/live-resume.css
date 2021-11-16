@@ -3536,7 +3536,9 @@ input[type="button"].btn-block {
 .card-img,
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px); }
+  border-top-right-radius: calc(0.25rem - 1px); 
+  margin-bottom: 10px;
+}
 
 .card-img,
 .card-img-bottom {
