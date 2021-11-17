@@ -1,3 +1,5 @@
+//functions that came with the theme https://www.bootstrapdash.com/product/free-bootstrap-resume/ + the share button click handler which was implemented later with the help of stackoverflow
+
 $('[data-toggle="collapsible-nav"]').on('click', function(e){
     var target = ($(this).data('target'));
     $('#' + target).toggleClass('show');
