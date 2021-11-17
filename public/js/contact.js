@@ -1,5 +1,14 @@
 var contactFormErrorMsg = ""
 
+function contactFormButtonClicked() {
+    if(validateContactForm()){
+        return true
+    } else {
+        alert(contactFormErrorMsg)
+        return false
+    }
+}
+
 function validateContactForm() {
     contactFormErrorMsg = ""
     const name = document.getElementById('name').value
@@ -25,5 +34,6 @@ function validateContactForm() {
         result = false;
         contactFormErrorMsg += "Msg is empty. "
     }
+    contactFormErrorMsg = "Errors in contact form. " + contactFormErrorMsg
     return result
 }

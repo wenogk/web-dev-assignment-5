@@ -22,7 +22,8 @@
         <main>
             <section class="contact-section">
                 <h2 class="section-title">Contact me!</h2>
-                <h6>I'm only one text, email or call away if you want to discuss anything from tech to boxing 🔥🔥 You can find my phone number and email on the left sidebar.</h6>
+                <h6>I'm only one text, email or call away if you want to discuss anything from tech to boxing 🔥🔥 You
+                    can find my phone number and email on the left sidebar.</h6>
 
                 {{#if formStatusSuccess}}
                 <div class="alert alert-success" role="alert">
@@ -35,41 +36,25 @@
                     An error occured while sending the message.
                 </div>
                 {{/if}}
-                <br/>
-<form action="/contact" method="POST">
+                <br />
+                <form action="/contact" method="POST" onSubmit="return contactFormButtonClicked()">
 
-    <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" />
-    </div>
-    <div class="form-group">
-        <label for="email" class="form-label">Email address</label>
-    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" />
-    </div>
-    <div class="form-group">
-        <label for="msg" class="form-label">Message</label>
-    <textarea type="text" name="msg" class="form-control" id="msg" placeholder="Type your message" ></textarea>
-    </div>
-     <button type="submit" class="btn btn-primary">Contact me</button>
-</form>
-
-                <form action="/contact" method="POST" class="contact-form">
-                    <div class="form-group form-group-name">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="NAME">
-                    </div>
-                    <div class="form-group form-group-email">
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="EMAIL">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" />
                     </div>
                     <div class="form-group">
-                        <label for="message" class="sr-only">Message</label>
-                        <textarea name="msg" id="message" class="form-control" placeholder="MESSAGE"
-                            rows="5"></textarea>
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control" id="email"
+                            placeholder="Enter your email" />
                     </div>
-                    <button type="submit" class="btn btn-primary form-submit-btn">SEND MESSAGE</button>
+                    <div class="form-group">
+                        <label for="msg" class="form-label">Message</label>
+                        <textarea type="text" name="msg" class="form-control" id="msg"
+                            placeholder="Type your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Contact me</button>
                 </form>
-
             </section>
             <section class="location-section">
                 <h5 class="section-title">MY LOCATION</h5>
