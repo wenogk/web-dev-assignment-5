@@ -21,19 +21,9 @@
 
         <main>
             <section class="contact-section">
-                <h2 class="section-title">GET IN TOUCH</h2>
-                <p class="mb-4">If you’d like to talk about a project, our work or anything else then get in touch.</p>
+                <h2 class="section-title">Contact me!</h2>
+                <h6>I'm only one text, email or call away if you want to discuss anything from tech to boxing 🔥🔥 You can find my phone number and email on the left sidebar.</h6>
 
-                <div class="contact-cards-wrapper">
-                    <div class="contact-card">
-                        <h6 class="contact-card-title">Call me</h6>
-                        <p class="contact-card-content">{{phone}}</p>
-                    </div>
-                    <div class="contact-card">
-                        <h6 class="contact-card-title">Email Me</h6>
-                        <p class="contact-card-content">{{email}}</p>
-                    </div>
-                </div>
                 {{#if formStatusSuccess}}
                 <div class="alert alert-success" role="alert">
                     Sent message successfully!
@@ -45,6 +35,24 @@
                     An error occured while sending the message.
                 </div>
                 {{/if}}
+                <br/>
+<form action="/contact" method="POST">
+
+    <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" />
+    </div>
+    <div class="form-group">
+        <label for="email" class="form-label">Email address</label>
+    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" />
+    </div>
+    <div class="form-group">
+        <label for="msg" class="form-label">Message</label>
+    <textarea type="text" name="msg" class="form-control" id="msg" placeholder="Type your message" ></textarea>
+    </div>
+     <button type="submit" class="btn btn-primary">Contact me</button>
+</form>
+
                 <form action="/contact" method="POST" class="contact-form">
                     <div class="form-group form-group-name">
                         <label for="name" class="sr-only">Name</label>
@@ -80,6 +88,7 @@
     <script src="vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/live-resume.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
