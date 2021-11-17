@@ -16,10 +16,14 @@ function validateContactForm() {
     if((email == null) || (email == "")) {
         result = false;
         contactFormErrorMsg += "Email is empty. "
+    } else if (/\S+@\S+\.\S+/.test(email) == false) { // got regex test for email validation from https://stackoverflow.com/a/9204568
+        result = false;
+        contactFormErrorMsg += "Email is not valid. "
     }
 
     if((msg == null) || (msg == "")) {
         result = false;
         contactFormErrorMsg += "Msg is empty. "
     }
+    return result
 }
