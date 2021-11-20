@@ -9,19 +9,35 @@
     </div>
     <nav class="social-links">
         <a href="{{githubLink}}" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-        <a href="{{linkedInLink}}" class="social-link" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
-        <a href="{{facebookLink}}" class="social-link" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-        <a href="{{twitterLink}}" class="social-link" target="_blank" ><i class="fab fa-twitter"></i></a>
+        <a href="{{linkedInLink}}" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="{{facebookLink}}" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="{{twitterLink}}" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
     </nav>
     <div class="widget">
         <h5 class="widget-title">personal information</h5>
         <div class="widget-content">
-            <p>Birthday : {{birthday}}</p>
-            <p>Phone : {{phone}}</p>
-            <p>Email : {{email}}</p>
-            <p>Location : {{location}}</p>
-            <a class="btn btn-download-cv btn-primary rounded-pill" href="/files/resume.pdf" target="_blank"> <img src="images/download.svg" alt="download"
-                    class="btn-img">View CV </a>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Birthday</td>
+                        <td>{{birthday}}</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>{{phone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>{{email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>{{location}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="btn btn-download-cv btn-primary rounded-pill" href="/files/resume.pdf" target="_blank"> <img
+                    src="images/download.svg" alt="download" class="btn-img">View CV </a>
         </div>
     </div>
     <div class="widget card">
